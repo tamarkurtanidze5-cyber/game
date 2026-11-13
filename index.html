@@ -10,16 +10,10 @@
 <body>
 
     <div class="game-container">
-        <h1>🎮 Number Guessing Game</h1>
+        <h1>🎯 Number Guessing Game</h1>
 
-        <p class="description">
-            I'm thinking of a number between 1 and 100.
-            Can you guess it?
-        </p>
-
-        <div class="game-info">
-            <p>Attempts remaining: <span id="attempts">7</span></p>
-        </div>
+        <p>I'm thinking of a number between 1 and 100.</p>
+        <p>You have 7 attempts to guess it!</p>
 
         <input
             type="number"
@@ -29,12 +23,14 @@
             max="100"
         >
 
-        <button id="guessButton">Make a Guess</button>
+        <button id="guessButton">Guess</button>
+        <button id="restartButton">Play Again</button>
 
         <p id="message">Good luck!</p>
-
-        <button id="restartButton">🔄 Restart Game</button>
+        <p id="attempts">Attempts remaining: 7</p>
     </div>
+
+    <div id="fireworks" aria-hidden="true"></div>
 
     <script src="script.js"></script>
 </body>
